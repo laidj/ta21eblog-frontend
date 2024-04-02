@@ -18,7 +18,7 @@ axios.get('http://localhost:8000/api/posts').then(res => {
                             {{ post.title }}
                         </p>
                     </header>
-                    <div class="card-image">
+                    <div class="card-image" v-if="post.images.length">
                         <figure class="image is-4by3">
                             <img :src="post.images[0].path" alt="Placeholder image">
                         </figure>
