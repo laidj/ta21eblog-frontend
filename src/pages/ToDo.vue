@@ -33,4 +33,3 @@ let toDoItems = computed(() => {
 <ItemList :items="toDoItems" title="ToDo Items"></ItemList>
 
 </template>
-
